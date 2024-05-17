@@ -1,0 +1,250 @@
+:root {
+
+    /* COLOR */
+    --color-prim: white;
+    --color-sec: #4f6de4;
+    --color-thrd: #33aaff;
+    --color-bkj1: var(--color-prim);
+    --color-bkj2: var(--color-sec);
+
+
+    /* SIZE */
+    --size-prim: 15px;
+    --margin-prim: var(--size-prim);
+    --padding-prim: var(--size-prim);
+
+
+    /* FONT */
+    --font-prim: "Roboto", sans-serif;
+    --font-bold: 550;
+    --font-light: 350;
+    --font-title: 30px;
+    --font-text: 22px;
+
+}
+
+
+body {
+    font-family: var(--font-prim);
+    background: url(../imgs/Background.jpg) no-repeat;
+    background-size: 110% 350%;
+    background-position: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    text-decoration: none;
+    color: var(--color-prim);
+}
+
+.photo {
+    width: auto;
+    height: 25vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: -20px;
+}
+
+.photo img {
+    width: auto;
+    height: 55%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -6.5vh;
+    color: var(--color-prim);
+}
+
+.name h1 {
+    text-transform: uppercase;
+    font-size: calc(var(--font-title)*.9);
+}
+
+.name h3 {
+    margin-top: -2.1vh;
+    font-size: var(--font-text);
+    font-weight: var(--font-light);
+}
+
+
+.buttms {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttms a {
+    background-color: var(--color-bkj1);
+    margin: calc(var(--margin-prim)*1.2);
+    padding: calc(var(--padding-prim)*1.5);
+    width: 60vh;
+    height: 2.2vh;
+    margin-top: -1vh;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    font-size: var(--font-text);
+    font-weight: var(--font-bold);
+    transition: .2s ease;
+}
+
+.behance a {
+    color: #226dfa;
+}
+
+.linkedin a {
+    color: #0071e1;
+}
+
+.vimeo a {
+    color: #02ade7;
+}
+
+.youtube a {
+    color: #e01919;
+}
+
+
+.behance a:hover {
+    color: var(--color-prim);
+    /* background-color: var(--color-bkj2); */
+    background: url(../imgs/bkj-btn1.jpg) no-repeat;
+    background-size: 110% 500%;
+    background-position: center;
+}
+
+.linkedin a:hover {
+    color: var(--color-prim);
+    /* background-color: var(--color-bkj2); */
+    background: url(../imgs/bkj-btn4.jpg) no-repeat;
+    background-size: 110% 500%;
+    background-position: center;
+}
+
+.vimeo a:hover {
+    color: var(--color-prim);
+    /* background-color: var(--color-bkj2); */
+    background: url(../imgs/bkj-btn3.jpg) no-repeat;
+    background-size: 110% 500%;
+    background-position: center;
+}
+
+.youtube a:hover {
+    color: var(--color-prim);
+    /* background-color: var(--color-bkj2); */
+    background: url(../imgs/bkj-btn5.jpg) no-repeat;
+    background-size: 110% 500%;
+    background-position: center;
+}
+
+
+
+
+.buttms a>i {
+    display: flex;
+    align-self: center;
+}
+
+.buttms a>.sml-icon {
+    font-size: 1.5vh;
+}
+
+.buttms a>.big-icon {
+    font-size: 2.5vh;
+}
+
+.social-icons a {
+    margin: 2vh;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons i {
+    font-size: 3vh;
+    text-decoration: none;
+    color: var(--color-bkj1);
+    transition: .1s ease;
+}
+
+.social-icons i:hover {
+    transform: scale(1.3);
+}
+
+
+
+.whatsaap i:hover {
+    color: #00ca4a;
+}
+
+.phone i:hover {
+    color: #01aaff;
+}
+
+.mail i:hover {
+    color: #FBBc05;
+}
+
+
+
+
+footer {
+    box-shadow: 0 -5px 55px rgba(1 1 1 / 18%);
+    color: var(--color-prim);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    font-size: calc(var(--size-prim)*1.1);
+}
+
+footer a {
+    color: var(--color-prim);
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+@media (max-width: 767px) {
+
+    body {
+        margin-top: 1vh;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        background-size: 150% 200%;
+        background-attachment: fixed;
+    }
+
+    .buttms {
+        margin-top: .8vh;
+    }
+
+    .buttms a {
+        width: 38vh;
+    }
+
+
+    footer {
+        font-size: var(--size-prim);
+    }
+
+
+}
