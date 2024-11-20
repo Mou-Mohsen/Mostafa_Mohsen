@@ -233,6 +233,19 @@ footer a:hover {
         background-attachment: fixed;
     }
 
+    .photo {
+        margin-top: -30px;
+    }
+
+    .name h1 {
+        font-size: 1.3rem
+    }
+    
+    .name h3 {
+        font-size: 1rem
+    }
+    
+
     .buttms {
         margin-top: .8vh;
     }
@@ -246,5 +259,8 @@ footer a:hover {
         font-size: var(--size-prim);
     }
 
+    footer p {
+        font-size: .8rem;
+    }
 
 }
